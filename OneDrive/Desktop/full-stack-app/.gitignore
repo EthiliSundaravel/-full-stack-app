@@ -1,19 +1,33 @@
-# Ignore system/user folders from higher up the directory
-../../../*
-
-# Ignore OneDrive user folders
-OneDrive*/  
+# Ignore system files and folders
+.DS_Store
+Thumbs.db
 *.lnk
 *.ini
 *.log
 *.tmp
-.DS_Store
-Thumbs.db
+*.swp
+*.lock
+~$*
 
-# Ignore IDE and tool folders
+# Ignore personal folders and IDE settings
 .vscode/
 .idea/
-*.swp
+node_modules/
+.next/
+AppData/
+Documents/
+Downloads/
+Pictures/
+Music/
+Videos/
+Favorites/
+OneDrive*/
+eclipse/
+logs/
+*.sql
 
-# Ignore OS hidden files
-~$*
+# Ignore VirtualBox, Docker, SSH, etc.
+.VirtualBox/
+.docker/
+.dotnet/
+.ssh/
